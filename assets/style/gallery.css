@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    background: black;
+    width: 100%;
+    font-family: 'Raleway';
+    height: 100dvh;
+}
+
+.container-fluid {
+    width: calc(100% - 30px) !important;
+    max-width: 1600px;
+}
+
+.backgroundColor {
+    display: block;
+    margin: 5rem auto 1.5rem auto;
+    background-color: #f0efe8;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.article-heading {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.article_text {
+    width: 97%;
+    margin: 0 auto;
+
+}
+
+.article-heading h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    margin: 0 0 30px 0;
+}
+
+.main_gallery_image_section {
+    padding-top: 7rem;
+}
+
+.gallery_image_section {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    place-content: center;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+
+.gallery_image {
+    width: 419px;
+    height: 279px;
+}
+
+.gallery_image>img {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:330px) {
+    .gallery_image_section {
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    .gallery_image {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media(min-width:680px) {
+    .gallery_image_section {
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    .gallery_image {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+@media(min-width:999px) {
+    .gallery_image_section {
+        grid-template-columns: repeat(3, max-content);
+    }
+
+    .gallery_image {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+@media(min-width:1340px) {
+    .gallery_image_section {
+        grid-template-columns: repeat(3, max-content);
+    }
+
+    .gallery_image {
+        width: 419px;
+        height: 279px;
+    }
+}
+
+/* main menu section start here */
+.main_opening_hours {
+    /* display: flex;
+    justify-content: space-between; */
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    column-gap: 1.5rem;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 2rem;
+    justify-content: space-between;
+}
+
+.main_opening_hours>.main_location_section {
+    width: 41rem;
+}
+
+.main_opening_hours>.book_section {
+    width: 41rem;
+    background: #1d2023;
+}
+
+.main_opening_hours .section4-module-left>.custom {
+    width: 100%;
+}
+
+.main_opening_hours>.menu {
+    width: 41rem;
+}
+
+.main_location_section .custom {
+    background-color: #b8ae9c;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main_location_section .custom h2 {
+    font-size: 43px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    padding-left: 1rem;
+}
+
+.main_location_section p img {
+    min-width: 10rem;
+    max-width: 40rem;
+    padding-top: 2rem;
+}
+
+.book_section h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    color: #fff;
+}
+
+.book_section .custom {
+    padding-left: 3rem;
+}
+
+.menu {
+    background-color: #1D2023;
+    color: #fff;
+}
+
+.menu h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Raleway';
+    font-style: normal;
+    margin: 0 0 20px 0;
+    font-weight: 300;
+}
+
+.menu .menu_img {
+    width: 11rem;
+}
+
+.menu .menu_img img {
+    width: 100%;
+}
+
+/* media query of opening hours start here */
+@media (max-width:1340px) {
+    .main_opening_hours {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        row-gap: 2rem;
+    }
+
+    .main_opening_hours>.main_location_section {
+        width: 38rem;
+    }
+
+    .main_opening_hours>.book_section {
+        width: 38rem;
+    }
+
+    .main_opening_hours>.menu {
+        width: 38rem;
+    }
+
+    .main_location_section .custom h2 {
+        font-size: 33px;
+    }
+
+    .main_location_section p img {
+        max-width: 35rem;
+    }
+}
+
+@media(max-width:999px) {
+    .main_opening_hours>.main_location_section {
+        width: 32rem;
+    }
+
+    .main_opening_hours>.book_section {
+        width: 32rem;
+    }
+
+    .main_opening_hours>.menu {
+        width: 32rem;
+    }
+
+    .main_location_section .custom h2 {
+        font-size: 33px;
+    }
+
+    .main_location_section p img {
+        max-width: 35rem;
+    }
+
+    .menu_heading>.inner>h2 {
+        margin-top: 2rem !important;
+        font-size: 5rem !important;
+    }
+
+    .section4-module-left>.custom>.inner h2 {
+        font-size: 35px !important;
+    }
+    .book_section .custom {
+        padding-left: 1rem;
+      }
+}
+
+@media (min-width:350px) and (max-width:700px) {
+    .main_opening_hours {
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    .main_opening_hours>.main_location_section {
+        width: 32rem;
+    }
+
+    .main_opening_hours>.book_section {
+        width: 32rem;
+    }
+
+    .main_location_section .custom h2 {
+        font-size: 33px;
+    }
+
+    .main_location_section p img {
+        max-width: 35rem;
+    }
+
+    .main_opening_hours>.menu {
+        width: 32rem;
+    }
+
+    .section4-module-left>.custom>.inner h2 {
+        font-size: 35px !important;
+    }
+    .menu_heading > .inner > h2 {
+        margin-top: 8rem !important;
+    }
+    .article_text p{
+        text-align: justify;
+    }
+}
+
+/* media query of opening hours end here  */
+/* main menu section end here */

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    background: black;
+    width: 100%;
+    height: 100dvh;
+}
+
+.container-fluid {
+    width: calc(100% - 30px);
+    max-width: 1600px;
+}
+
+.backgroundColor {
+    display: block;
+    margin: 5rem auto 1.5rem auto;
+    background-color: #f0efe8;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+/* offer banner start here */
+.offer_banner_image {
+    position: relative;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+.offer_banner_image>.offer_banner_Image_one img {
+    width: 100%;
+    height: auto;
+}
+
+/* offer banner end here  */
+
+/* offer article heading start here */
+.offer_article_heading{
+    width:calc(100% - 30px);
+    margin: 0 auto;
+    padding-top:4rem;
+}
+.offer_article_heading>.article_heading>h1 {
+    font-size: 7.2rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+.offer_article_heading>.offer_article_text>p:nth-child(1){
+    padding-bottom:5rem;
+}
+/* offer article heading end here  */
